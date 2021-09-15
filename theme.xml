@@ -1,0 +1,261 @@
+<!--
+theme name:     CODY NEON 
+version:        1.0
+author:         CodyV59
+license:        creative commons CC-BY-NC-SA - https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+credits to:     
+- "Ports" carousel background: "Export" by Jake Dunham from the Noun Project
+-->
+
+<theme>
+    <formatVersion>4</formatVersion>
+
+
+	
+	<feature supported="carousel">
+		<view name="system">
+		  <carousel name="systemcarousel">
+			   <type>vertical</type>
+			   <origin>0.5 0.5</origin>
+			   <pos>0.5 0.5</pos>
+			   <size>1 1</size>
+			   <color>00000000</color>
+			   <logoScale>2.10</logoScale>
+			   <logoSize>0.22 0.17</logoSize>
+			   <maxLogoCount>1</maxLogoCount>
+			   <logoRotation>0</logoRotation>
+			   <logoRotationOrigin>-5 0.5</logoRotationOrigin>
+
+			   <zIndex>75</zIndex>
+		  </carousel>
+		  
+		  <text name="logoText">
+			<color>FFFFFF</color>
+			<fontPath>./_inc/fonts/Acre.otf</fontPath>
+			<forceUppercase>false</forceUppercase>
+		  </text>
+
+		  	<image name="logo">
+				<color>FFFFFFFF</color>
+			</image>
+		  
+		  <image name="carousel_background" extra="true">
+			<path>./_inc/images/purple/background.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<maxSize>1 1</maxSize>
+			<rotation>0</rotation>
+
+		</image>
+
+		  <image name="carousel_waves" extra="true">
+			<path>./_inc/images/purple/waves.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<maxSize>1 1</maxSize>
+			<rotation>0</rotation>
+
+		</image>
+
+		  
+			<text name="systemInfo">
+				<backgroundColor>11111100</backgroundColor>
+				<color>FFFFFF</color>
+				<pos>0 0.94</pos>
+				<size>1 0.062</size>
+				<fontPath>./_inc/fonts/Acre.otf</fontPath>
+				<fontSize>0.038</fontSize>
+				<zIndex>199</zIndex>
+
+			</text>
+		</view>
+	</feature>
+
+    <view name="system, basic, detailed, video">
+
+		  <image name="gamelist_background" extra="true">
+			<path>./_inc/images/purple/gamelistbg.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<maxSize>1 1</maxSize>
+			<rotation>0</rotation>
+
+		</image>
+
+		<helpsystem name="help">
+			<textColor>FFFFFF</textColor>
+			<iconColor>FFAE00</iconColor>
+			<fontPath>./_inc/fonts/Acre.otf</fontPath>
+			<fontSize>0.037</fontSize>
+		</helpsystem>
+	</view>
+
+
+	 <view name="system">
+		<image name="bgsystem" extra="true">
+			<path>./${system.theme}/bgsystem.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<maxSize>1 1</maxSize>
+
+		</image>
+		<image name="arrows" extra="true">
+			<path>./_inc/images/purple/arrows.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<maxSize>1 1</maxSize>
+			<rotation>0</rotation>
+<zIndex>99</zIndex>
+		</image>
+
+	</view>
+   
+
+	<view name="basic">
+		<image name="logo" extra="false">
+			<origin>0 0</origin>
+			<pos>0.01 0.02</pos>
+			<maxSize>0.45 0.25</maxSize>
+		</image>
+		
+
+		<textlist name="gamelist">
+			<selectorColor>00000000</selectorColor>
+			<selectedColor>ffae00</selectedColor>
+			<primaryColor>ffffff</primaryColor>
+			<secondaryColor>ffff80</secondaryColor>
+			<fontPath>./_inc/fonts/recharge.ttf</fontPath>
+			<origin>1 0</origin>
+			<pos>1 0.02</pos>
+			<size>0.6 0.97</size>
+			<fontSize>0.035</fontSize>
+			<lineSpacing>1.51</lineSpacing>
+		</textlist>
+		
+	</view>
+	
+    <view name="detailed">
+		<image name="md_image">
+		<origin>0.5 1</origin>
+		<pos>0.815 0.89</pos>
+		<maxSize>0.325 0.6</maxSize>
+		<default>./_inc/images/missing_logo_${FPlogo}.png</default>
+		</image>
+		
+	</view>
+
+	<feature supported="video">
+		<view name="video">
+			<video name="md_video">
+				<origin>0.5 0.5</origin>
+				<pos>0.5 0.44</pos>
+				<maxSize>0.88 0.88</maxSize>
+				<delay>1</delay>
+				<showSnapshotNoVideo>true</showSnapshotNoVideo>
+				<showSnapshotDelay>true</showSnapshotDelay>
+			</video>
+			
+			<image name="video_mask" extra="true">
+				<path>./_inc/images/purple/gamelistbg2.png</path>
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<zIndex>0</zIndex>
+
+			</image>
+
+			<image name="snap_mask" extra="true">
+				<path>./_inc/images/purple/snapmask2.png</path>
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<zIndex>30</zIndex>
+
+			</image>
+
+		</view>
+
+	</feature>
+	
+	<feature supported="z-index">
+		<view name="video">
+			<video name="md_video">
+			<zIndex>30</zIndex>
+			</video>
+			<image name="md_marquee">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.55</pos>
+			<maxSize>0.28 0.22</maxSize>
+			<zIndex>2</zIndex>
+			</image>
+ <rating name="md_rating">
+         <origin>0.5 0.5</origin>       
+         <pos>0.42 0.88</pos>
+         <size>0.06 0.06</size>
+	 <rotation>0</rotation>
+         <zIndex>50</zIndex>
+         <filledPath>./_inc/images/purple/star_full.png</filledPath>
+         <unfilledPath>./_inc/images/purple/star_hollow.png</unfilledPath>
+        </rating>
+
+
+		</view>
+	</feature>
+	
+	<view name="detailed,video">
+		
+		<image name="logo">
+			<origin>0.5 0</origin>
+			<pos>2 2</pos>
+			<maxSize>0.30 0.18</maxSize>
+<rotation>-16</rotation>
+		</image>
+		
+		<textlist name="gamelist">
+			<selectorColor>00000000</selectorColor>
+			<selectedColor>ffffff</selectedColor>
+			<primaryColor>777777</primaryColor>
+			<secondaryColor>ffff80</secondaryColor>
+			<fontPath>./_inc/fonts/recharge.ttf</fontPath>
+			<origin>0.5 1</origin>
+			<pos>0.5 0.99</pos>
+			<size>0.74 0.06</size>
+			<fontSize>0.041</fontSize>
+			<lineSpacing>1.5</lineSpacing>
+			<alignment>center</alignment>
+
+			<horizontalMargin>0.01</horizontalMargin>
+			<scrollSound>./_art/assets/listscroll.wav</scrollSound>
+			<zIndex>40</zIndex>
+		</textlist>
+	
+	</view>
+	  <view name="menu">
+      <menuBackground name="menubg">
+      <color>171717</color>
+      </menuBackground>
+	<menuText name="menutext">
+	  <fontPath>./_art/Acre.otf</fontPath>
+	  <fontSize>.04</fontSize>
+	  <color>777777</color>
+      <separatorColor>777777</separatorColor>
+      <selectorColor>${baseColor}</selectorColor>
+      <selectorColorEnd>${gradientEndColor}</selectorColorEnd>
+      <selectedColor>FFFFFF</selectedColor>
+      <selectorGradientType>horizontal</selectorGradientType>
+	</menuText>
+     </view>
+	  <view name="screen">
+      <text name="clock">
+      <color>${FPtextColor}</color>
+	  <fontPath>./_inc/fonts/Acre.otf</fontPath>
+      <fontSize>0.035</fontSize>
+      <pos>0.8999 0.936</pos>
+      <size>0.09 0.058</size>
+      <alignment>right</alignment>
+      <verticalAlignment>center</verticalAlignment>
+    </text>
+  </view>
+
+</theme>
